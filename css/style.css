@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -o-user-select: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo {
+  text-align: center;
+}
+.logo img {
+  width: 20%;
+}
+
+.XLNav {
+  background: #fdc114;
+  display: flex;
+  justify-content: center;
+}
+.XLNav .XLMainBtn {
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid #e8af08;
+}
+.XLNav .XLMainBtn:last-of-type {
+  border-right: 0;
+}
+
+.XLMainBtn {
+  cursor: pointer;
+  position: relative;
+}
+.XLMainBtn div:first-of-type {
+  color: #2d2d2d;
+  padding: 10px 15px;
+}
+.XLMainBtn div:last-of-type {
+  position: absolute;
+  top: 38px;
+}
+.XLMainBtn .XLNavBtn {
+  display: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  background: #fdc114;
+  width: 100%;
+  border: 0;
+  text-align: left;
+  border-top: 2px solid #e8af08;
+  white-space: nowrap;
+  /*^^ STOP LINE BREAKS ^^*/
+}
+.XLMainBtn .XLNavBtn:hover {
+  background: #e9b109;
+}
+.XLMainBtn:hover .XLNavBtn {
+  display: block;
+}
+
+#dvExcel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.XLTitle {
+  margin: 10px 0;
+  z-index: -1;
+  color: #2d2d2d;
+  font-size: 2em;
+  position: relative;
+  text-decoration: underline;
+}
+
+.XLTable {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.XLColumn {
+  cursor: pointer;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.XLHeader,
+.XLInner {
+  text-align: center;
+  border: 1px solid black;
+  padding: 0 30px;
+}
+
+.XLInner {
+  background: #ccc;
+  white-space: nowrap;
+}
+.XLInner:nth-child(odd) {
+  background: #eee;
+}
+
+.XLColumn > div:first-of-type {
+  background: rgb(165, 165, 165);
+}
+
+.blank {
+  color: transparent;
+}
+
+.selected {
+  font-weight: bold;
+  background: #FDC114 !important;
+}/*# sourceMappingURL=style.css.map */
